@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.5.17+commit.d19bba13"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": true,
+				"inputs": [],
+				"name": "getResult",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/callsendtx.sol": "sumcal"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/callsendtx.sol": {
+			"keccak256": "0xe282c8e1c4bbbb74feb22a4b87b4f49dac5d498f4ec5d2dd2e44db4785c1d926",
+			"urls": [
+				"bzz-raw://d2f7eec57cdde4985dc06509f2a51d8c92fa8636c9a6d24eadb9988b93ba13f2",
+				"dweb:/ipfs/QmdfjEHawygRwxfVxitcn8RL4m1Tyzdmqa2KiZWLUTAF3o"
+			]
+		}
+	},
+	"version": 1
+}

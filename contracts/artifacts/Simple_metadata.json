@@ -1,0 +1,106 @@
+{
+	"compiler": {
+		"version": "0.4.26+commit.4563c3fc"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"name": "newCity",
+						"type": "string"
+					}
+				],
+				"name": "changeStudentDetails",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": false,
+				"inputs": [
+					{
+						"name": "key",
+						"type": "string"
+					},
+					{
+						"name": "city",
+						"type": "string"
+					},
+					{
+						"name": "country",
+						"type": "string"
+					}
+				],
+				"name": "createStudent",
+				"outputs": [],
+				"payable": true,
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"constant": true,
+				"inputs": [
+					{
+						"name": "key",
+						"type": "string"
+					}
+				],
+				"name": "queryStudent",
+				"outputs": [
+					{
+						"name": "",
+						"type": "string"
+					},
+					{
+						"name": "",
+						"type": "string"
+					}
+				],
+				"payable": false,
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"payable": false,
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/student.sol": "Simple"
+		},
+		"evmVersion": "byzantium",
+		"libraries": {},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/student.sol": {
+			"keccak256": "0x8287f0d6bcb79a5e174d12cc3b26c5428f9c01bf9783060ba4ac86713a397beb",
+			"urls": [
+				"bzzr://08d23b23771a1f16892a45f783b2cb9268d244dbd4d84b0f007a06536d2ef68d"
+			]
+		}
+	},
+	"version": 1
+}

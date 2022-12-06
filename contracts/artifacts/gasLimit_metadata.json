@@ -1,0 +1,53 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "inc",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/infinteGas.sol": "gasLimit"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/infinteGas.sol": {
+			"keccak256": "0xcf3599cd65b6c2afde9a36ba61aa0fc148ce950151cc095ca25faf03b89260da",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://5a633e9d162510414f744284840b6a2804f6ae1382d1ef0d1cdb017e8b214f65",
+				"dweb:/ipfs/QmSK3EwD2wY9ZmG4H1nKb8gBR1nLya2JfGXndqMprkymPj"
+			]
+		}
+	},
+	"version": 1
+}

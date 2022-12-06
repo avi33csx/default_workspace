@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "condition",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "l",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "m",
+						"type": "int256"
+					}
+				],
+				"name": "getVar",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/ifelse.sol": "itroIf"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/ifelse.sol": {
+			"keccak256": "0x63e5722c67b850b0618ce82c0cddfd4ba6afded330a82279227e39e6266b1e01",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://262f9c21a36d16a103c6b3f139cb1d3849c3b8be1e0a308ef9f2c00e52f0933e",
+				"dweb:/ipfs/QmQzHwD8eM9PQkVMt9jEkKy4dFyYUsXB5AZPk8mFH52zmX"
+			]
+		}
+	},
+	"version": 1
+}

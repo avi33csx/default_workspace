@@ -1,0 +1,106 @@
+{
+	"compiler": {
+		"version": "0.8.6+commit.11564f7e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "k",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "l",
+						"type": "int256"
+					}
+				],
+				"name": "addX",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "dis",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "m",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "n",
+						"type": "int256"
+					}
+				],
+				"name": "get",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/viewpure2.sol": "viewpure2"
+		},
+		"evmVersion": "berlin",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/viewpure2.sol": {
+			"keccak256": "0xed5454f359a80bc144de6369fa5e2a256661721103f175ea5019321203ffaded",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3f88cfb330e08c2916bb5425b21a6ff9502e35ef45a3ce03ff27b7b2b7321b2e",
+				"dweb:/ipfs/Qmbh7YrkBgMDj8YEGjCYnvgT4MLueTsyZd5zysYWk1b3JW"
+			]
+		}
+	},
+	"version": 1
+}

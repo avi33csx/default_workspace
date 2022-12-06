@@ -1,0 +1,417 @@
+{
+	"id": "803cae034bc228f9f3d98beabec85560",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.7",
+	"solcLongVersion": "0.8.7+commit.e28d00a7",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"contracts/counter.sol": {
+				"content": "//SPDX-Licencse-Identifier:MIT\r\n\r\n//0xE5f2A565Ee0Aa9836B4c80a07C8b32aAd7978e22 --contract address\r\n// if we are not changing the data only reading the data from the blockchain made it view\r\n//view allows you to see the state of the variable having global state.\r\n// but if we reading the data that is not stored in the blockchain decleare it as pure \r\n//msg avriable,block,tx are known as global; variable\r\npragma solidity  ^0.8.3;\r\ncontract Counter\r\n{\r\nint a;\r\nint b;  //global stae ---count value will be stored in blockchain thats wahy are known as global variable\r\n}\r\n    \r\n//unsigned int (0-256 bits)\r\n    //uint8,unit256(256 bits in size);\r\n    //int ,int 256--->\r\n    //address addr=\r\n    // we dont have addr like values in other language \r\n    //bool=false\r\n    //fixed\r\n    //struct\r\n    //string\r\n    //enum\r\n    //byters of arry"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"contracts/counter.sol": {
+				"Counter": {
+					"abi": [],
+					"devdoc": {
+						"kind": "dev",
+						"methods": {},
+						"version": 1
+					},
+					"evm": {
+						"assembly": "    /* \"contracts/counter.sol\":433:570  contract Counter\r... */\n  mstore(0x40, 0x80)\n  callvalue\n  dup1\n  iszero\n  tag_1\n  jumpi\n  0x00\n  dup1\n  revert\ntag_1:\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"contracts/counter.sol\":433:570  contract Counter\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa2646970667358221220418be028bbc23d5460b8f4ffa1bee685550210a684e5e8a61c4033d0bb2f34a564736f6c63430008070033\n}\n",
+						"bytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220418be028bbc23d5460b8f4ffa1bee685550210a684e5e8a61c4033d0bb2f34a564736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 COINBASE DUP12 0xE0 0x28 0xBB 0xC2 RETURNDATASIZE SLOAD PUSH1 0xB8 DELEGATECALL SELFDESTRUCT LOG1 0xBE 0xE6 DUP6 SSTORE MUL LT 0xA6 DUP5 0xE5 0xE8 0xA6 SHR BLOCKHASH CALLER 0xD0 0xBB 0x2F CALLVALUE 0xA5 PUSH5 0x736F6C6343 STOP ADDMOD SMOD STOP CALLER ",
+							"sourceMap": "433:137:0:-:0;;;;;;;;;;;;;;;;;;;"
+						},
+						"deployedBytecode": {
+							"functionDebugData": {},
+							"generatedSources": [],
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220418be028bbc23d5460b8f4ffa1bee685550210a684e5e8a61c4033d0bb2f34a564736f6c63430008070033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 COINBASE DUP12 0xE0 0x28 0xBB 0xC2 RETURNDATASIZE SLOAD PUSH1 0xB8 DELEGATECALL SELFDESTRUCT LOG1 0xBE 0xE6 DUP6 SSTORE MUL LT 0xA6 DUP5 0xE5 0xE8 0xA6 SHR BLOCKHASH CALLER 0xD0 0xBB 0x2F CALLVALUE 0xA5 PUSH5 0x736F6C6343 STOP ADDMOD SMOD STOP CALLER ",
+							"sourceMap": "433:137:0:-:0;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 433,
+									"end": 570,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 433,
+									"end": 570,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 433,
+									"end": 570,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 433,
+									"end": 570,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 433,
+									"end": 570,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 433,
+									"end": 570,
+									"name": "ISZERO",
+									"source": 0
+								},
+								{
+									"begin": 433,
+									"end": 570,
+									"name": "PUSH [tag]",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 433,
+									"end": 570,
+									"name": "JUMPI",
+									"source": 0
+								},
+								{
+									"begin": 433,
+									"end": 570,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 433,
+									"end": 570,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 433,
+									"end": 570,
+									"name": "REVERT",
+									"source": 0
+								},
+								{
+									"begin": 433,
+									"end": 570,
+									"name": "tag",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 433,
+									"end": 570,
+									"name": "JUMPDEST",
+									"source": 0
+								},
+								{
+									"begin": 433,
+									"end": 570,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 433,
+									"end": 570,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 433,
+									"end": 570,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 433,
+									"end": 570,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 433,
+									"end": 570,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 433,
+									"end": 570,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 433,
+									"end": 570,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 433,
+									"end": 570,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220418be028bbc23d5460b8f4ffa1bee685550210a684e5e8a61c4033d0bb2f34a564736f6c63430008070033",
+									".code": [
+										{
+											"begin": 433,
+											"end": 570,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 433,
+											"end": 570,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 433,
+											"end": 570,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 433,
+											"end": 570,
+											"name": "PUSH",
+											"source": 0,
+											"value": "0"
+										},
+										{
+											"begin": 433,
+											"end": 570,
+											"name": "DUP1",
+											"source": 0
+										},
+										{
+											"begin": 433,
+											"end": 570,
+											"name": "REVERT",
+											"source": 0
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.8.7+commit.e28d00a7\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/counter.sol\":\"Counter\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/counter.sol\":{\"keccak256\":\"0x0385c6a79d83efcdc372dcb6a2b4d9392fbc9726ba71decd5210c92817e91eba\",\"urls\":[\"bzz-raw://b60f8217cf29cb15c2ed798ac2fbe43bbca0b4afee2b42ca48bed22dc9a1531f\",\"dweb:/ipfs/Qmf5uBeytpS9ZMfpTWCeKjSEXZDpr6eUqmhMMTSAUaHZ77\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 3,
+								"contract": "contracts/counter.sol:Counter",
+								"label": "a",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_int256"
+							},
+							{
+								"astId": 5,
+								"contract": "contracts/counter.sol:Counter",
+								"label": "b",
+								"offset": 0,
+								"slot": "1",
+								"type": "t_int256"
+							}
+						],
+						"types": {
+							"t_int256": {
+								"encoding": "inplace",
+								"label": "int256",
+								"numberOfBytes": "32"
+							}
+						}
+					},
+					"userdoc": {
+						"kind": "user",
+						"methods": {},
+						"version": 1
+					}
+				}
+			}
+		},
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "1878",
+				"formattedMessage": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> contracts/counter.sol\n\n",
+				"message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "contracts/counter.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"contracts/counter.sol": {
+				"ast": {
+					"absolutePath": "contracts/counter.sol",
+					"exportedSymbols": {
+						"Counter": [
+							6
+						]
+					},
+					"id": 7,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"^",
+								"0.8",
+								".3"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "407:24:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"fullyImplemented": true,
+							"id": 6,
+							"linearizedBaseContracts": [
+								6
+							],
+							"name": "Counter",
+							"nameLocation": "442:7:0",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"constant": false,
+									"id": 3,
+									"mutability": "mutable",
+									"name": "a",
+									"nameLocation": "458:1:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 6,
+									"src": "454:5:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_int256",
+										"typeString": "int256"
+									},
+									"typeName": {
+										"id": 2,
+										"name": "int",
+										"nodeType": "ElementaryTypeName",
+										"src": "454:3:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_int256",
+											"typeString": "int256"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 5,
+									"mutability": "mutable",
+									"name": "b",
+									"nameLocation": "466:1:0",
+									"nodeType": "VariableDeclaration",
+									"scope": 6,
+									"src": "462:5:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_int256",
+										"typeString": "int256"
+									},
+									"typeName": {
+										"id": 4,
+										"name": "int",
+										"nodeType": "ElementaryTypeName",
+										"src": "462:3:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_int256",
+											"typeString": "int256"
+										}
+									},
+									"visibility": "internal"
+								}
+							],
+							"scope": 7,
+							"src": "433:137:0",
+							"usedErrors": []
+						}
+					],
+					"src": "407:433:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
